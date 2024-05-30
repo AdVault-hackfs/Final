@@ -1,36 +1,50 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
 .App {
   text-align: center;
 }
 
 .App-header {
-  background-color: #0000ff;
-  min-height: 100vh;
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.logo {
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.upload-section {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  padding: 20px;
 }
 
-.File-input {
+.upload-window {
+  background: white;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: left;
+}
+
+.upload-window h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+input[type="file"] {
+  width: 100%;
   padding: 10px;
-  margin: 20px;
-  font-size: 18px;
-  border: 2px solid #61dafb;
+  border: 1px solid #ddd;
   border-radius: 5px;
-  background-color: transparent;
-  color: white;
-  cursor: pointer;
-  outline: none;
-}
-
-.File-input:hover {
-  background-color: #61dafb;
-  color: black;
-}
-
-.File-input:focus {
-  border-color: #61dafb;
-  box-shadow: 0 0 5px #61dafb;
 }
