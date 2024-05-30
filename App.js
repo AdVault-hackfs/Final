@@ -12,7 +12,7 @@ function App() {
   const uploadFile = async (file, type) => {
     const output = await lighthouse.upload(
       file,
-      "e0de6603.9d51a215958d42249f66049a26a15fad",
+      "API_KEY",
       false,
       null,
       progressCallback
