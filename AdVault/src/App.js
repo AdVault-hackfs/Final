@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import lighthouse from "@lighthouse-web3/sdk";
-import "./App.css"; // Import the main CSS file
-import Footer from "./Footer"; // Import the Footer component
+import "./App.css"; // Import the CSS file
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -10,7 +9,7 @@ function App() {
   const [descriptionFileName, setDescriptionFileName] = useState("");
 
   const progressCallback = (progressData) => {
-    let percentageDone = 
+    let percentageDone =
       100 - (progressData?.total / progressData?.uploaded)?.toFixed(2);
     console.log(percentageDone);
   };
@@ -54,7 +53,11 @@ function App() {
     <div className="App">
       {loading && <div className="loading-indicator">Uploading...</div>}
       <header className="App-header">
-        <img src="AdVault/assets/advault logo.png" alt="AdVault" className="logo" />
+        <img
+          src="AdVault/assets/advault logo.png"
+          alt="AdVault"
+          className="logo"
+        />
         <h1>Ad Upload Dashboard</h1>
       </header>
       <div className="upload-section">
@@ -95,7 +98,39 @@ function App() {
           <span className="file-name">{descriptionFileName}</span>
         </div>
       </div>
-      <Footer /> {/* Add the Footer component here */}
+      <footer className="App-footer">
+        <p>&copy; 2024 AdVault. All rights reserved.</p>
+        <p>
+          Follow us on
+          <a
+            href="https://twitter.com/advault"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            Twitter
+          </a>
+          ,
+          <a
+            href="https://facebook.com/advault"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            Facebook
+          </a>
+          , and
+          <a
+            href="https://instagram.com/advault"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            Instagram
+          </a>
+          .
+        </p>
+      </footer>
     </div>
   );
 }
