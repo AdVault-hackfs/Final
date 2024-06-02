@@ -19,7 +19,7 @@ function App() {
     try {
       const output = await lighthouse.upload(
         file,
-        "8042ee4f.3d3131d24f0041b8b7bf3b85e336195e",
+        "1ff67cd9.316490205ee44c58bf8cd4dd71ff276e",
         false,
         null,
         progressCallback
