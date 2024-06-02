@@ -14,6 +14,7 @@ function App() {
     console.log(percentageDone);
   };
 
+
   const uploadFile = async (file) => {
     setLoading(true);
     try {
@@ -47,6 +48,7 @@ function App() {
       }
       uploadFile(file);
     }
+
   };
 
   return (
