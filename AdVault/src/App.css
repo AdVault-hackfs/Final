@@ -17,6 +17,9 @@ body {
 .logo {
   height: 80px;
   margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .upload-section {
@@ -35,6 +38,11 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 300px;
   text-align: left;
+  transition: box-shadow 0.3s ease;
+}
+
+.upload-window:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .upload-window h2 {
@@ -43,8 +51,40 @@ body {
 }
 
 input[type="file"] {
-  width: 100%;
-  padding: 10px;
+  display: none;
+}
+
+.file-label {
+  display: inline-block;
+  padding: 10px 20px;
   border: 1px solid #ddd;
   border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.file-label:hover {
+  background-color: #0056b3;
+}
+
+.file-name {
+  margin-left: 10px;
+  font-style: italic;
+  color: #555;
+}
+
+.loading-indicator {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 1.5em;
+  z-index: 9999;
+  text-align: center;
 }
