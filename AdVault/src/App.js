@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import lighthouse from "@lighthouse-web3/sdk";
-import "./App.css"; // Import the CSS file
+import "./App.css"; // Import the main CSS file
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -103,7 +103,7 @@ function App() {
         <p>
           Follow us on
           <a
-            href="https://twitter.com/advault"
+            href="https://twitter.com/DhruvVa86396760"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -112,7 +112,7 @@ function App() {
           </a>
           ,
           <a
-            href="https://facebook.com/advault"
+            href="https://www.facebook.com/DhruvVarshneyDeveloper"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -121,7 +121,7 @@ function App() {
           </a>
           , and
           <a
-            href="https://instagram.com/advault"
+            href="https://www.instagram.com/developer.dhruv.varshney/"
             target="_blank"
             rel="noopener noreferrer"
           >
