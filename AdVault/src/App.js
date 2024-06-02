@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import lighthouse from "@lighthouse-web3/sdk";
-import "./App.css"; // Import the CSS file
+import "./App.css"; // Import the main CSS file
+import Footer from "./Footer"; // Import the Footer component
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -13,7 +14,6 @@ function App() {
       100 - (progressData?.total / progressData?.uploaded)?.toFixed(2);
     console.log(percentageDone);
   };
-
 
   const uploadFile = async (file) => {
     setLoading(true);
@@ -48,7 +48,6 @@ function App() {
       }
       uploadFile(file);
     }
-
   };
 
   return (
@@ -96,6 +95,7 @@ function App() {
           <span className="file-name">{descriptionFileName}</span>
         </div>
       </div>
+      <Footer /> {/* Add the Footer component here */}
     </div>
   );
 }
